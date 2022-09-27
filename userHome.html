@@ -1,0 +1,189 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyClinic User View</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body style="display: flex; justify-content:center;">
+    <div>
+
+      <ul class="nav nav-pills fixed-top shadow-lg p-2 mb-5 bg-dark">
+        <img src="./MClogo.png" style="width: 40px; height: 40px;">
+        <li class="nav-item">
+          <a class="navbar-brand active" aria-current="page" href="./userHome.html"><h1 style="margin-left: 10px; color: aliceblue; font-size:30px;">MyClinic</h1></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="./join.html" style="margin-left: 10px; color:aliceblue; border-left: 1px solid rgb(80, 80, 80);">Become a partner</a>
+        </li>
+        <form class="d-flex mt-0.5" role="search" style="position:absolute; margin-left: 470px;">
+          <input class="form-control me-2" type="search" placeholder="Search Clinic" aria-label="Search">
+          <a class="btn btn-primary" type="submit" style="width:200px;" href="./userHome.html">Search</a>
+        </form>
+        
+        <li class="nav-item dropdown ms-auto">
+
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            <span id="f3" style="color: aliceblue;">user</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">My Appointments</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./index.html">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      
+    <!-- ///////////////////////// -->
+    
+    
+      <div class="row2 rounded" >
+        <div style="height:70px;"></div>
+        <div class="searchBox">
+          <h3>Search Filter</h3>
+          <hr>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              By Insurance Company
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              By Clinic
+            </label>
+          </div>
+          <br>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> Dental</label></div>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> Medical</label></div>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> Pediatric</label></div>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> Sports</label></div>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> Plastic</label></div>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> Surgical</label></div>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> Orthopedic</label></div>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> psychiatric</label></div>
+          <div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""><label style="margin-left: 5px;"> veterinary</label></div><br>
+          <button type="button" class="btn btn-outline-light" style="width: 100%;">Search</button>
+          
+
+        </div><br>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color:rgb(14, 14, 14); color:aliceblue;">
+                <h6 style="font-size: 18px; ">Become a partner.</h6>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne"style="text-align:center;">
+              <div class="accordion-body">
+                <strong>If you own a clinic,</strong> join MyClinic, and increase your popularity.
+              
+              </div>
+              <a href="./join.html"> Click here to join us. </a><hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div style="height:100px;"></div>
+        
+        <div class="card shadow-lg mb-5" style="width: 24rem;">
+          <img src="./clinic1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">The Surgical Clinic</h4>
+            <p class="card-text">We provide all types of surgical procedure. All Specialities are available.</p>
+          </div>
+          <div class="card-body">
+            <a href="./TheSurgicalClinic.html" type="button" class="btn btn-outline-dark" style="width: 100%;"><strong>View / Book Appointment</strong></a>
+          </div>
+        </div>
+        
+      
+        <div class="card shadow-lg mb-5" style="width: 24rem;">
+          <img src="./clinic2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Dental Clinic</h4>
+            <p class="card-text">The best Dental Clinic reviews. We have the highest and best offers.</p>
+          </div>
+          <div class="card-body">
+            <a href="./DentalClinic.html" type="button" class="btn btn-outline-dark" style="width: 100%;"><strong>View / Book Appointment</strong></a>
+          </div>
+        </div>
+      
+        <div class="card shadow-lg mb-5" style="width: 24rem;">
+          <img src="./clinic3.gif" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">City Medical Center</h4>
+            <p class="card-text">Medical Clinic, Specializes in pediactric and adult medical diseases.</p>
+          </div>
+          <div class="card-body">
+            <a href="./CityMedicalCenter.html" type="button" class="btn btn-outline-dark " style="width: 100%;"><strong>View / Book Appointment</strong></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card shadow-lg mb-5" style="width: 24rem;">
+            <img src="./clinic4.jfif" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Spring Eye Clinic</h4>
+              <p class="card-text">Your vision is our vision. Click view and check our offer.</p>
+            </div>
+            <div class="card-body">
+              <a href="./SpringEyeClinic.html" type="button" class="btn btn-outline-dark" style="width: 100%;"><strong>View / Book Appointment</strong></a>
+            </div>
+          </div>
+        
+          <div class="card shadow-lg mb-5" style="width: 24rem;">
+            <img src="./clinic5.jpg" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">MD Surgical Center</h4>
+              <p class="card-text">We provide a high quality services for our patients.</p>
+            </div>
+            <div class="card-body">
+              <a href="./MDSurgicalCenter.html" type="button" class="btn btn-outline-dark" style="width: 100%;"><strong>View / Book Appointment</strong></a>
+            </div>
+          </div>
+        
+          <div class="card shadow-lg mb-5" style="width: 24rem;">
+            <img src="./clinic6.gif" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Q Dental Center</h4>
+              <p class="card-text">We provide all types of dental procedure for all ages.</p>
+            </div>
+            <div class="card-body">
+              <a href="./QDentalCenter.html" type="button" class="btn btn-outline-dark" style="width: 100%;"><strong>View / Book Appointment</strong></a>
+            </div>
+          </div>
+          
+  
+      </div>
+
+
+
+
+
+
+    </div>
+
+    <script>
+      const firstName = localStorage.getItem('first-name');
+      const lastName =  localStorage.getItem('last-name');
+      document.getElementById("f3").innerText = firstName +" "+lastName;
+    </script>
+    
+        
+
+          <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+</body>
+</html>
